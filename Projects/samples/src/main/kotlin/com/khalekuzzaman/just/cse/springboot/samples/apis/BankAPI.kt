@@ -26,6 +26,7 @@ class BankController {
 
     }
 
+
     @GetMapping("/{account}")
     fun getBank(@PathVariable account: String): Bank {
         return Bank("Test Account", 12.0, 40)
