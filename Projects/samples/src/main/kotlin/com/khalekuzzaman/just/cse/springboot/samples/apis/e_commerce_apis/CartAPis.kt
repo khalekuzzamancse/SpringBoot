@@ -80,7 +80,7 @@ class OrderController {
     fun addCart(@RequestBody schema: CartSchema) {
         //automatically JSON will be deserialized to Bank instance
         CartDatabase.addCart(schema)
-        println(CartDatabase.getAllCarts())
+        //println(CartDatabase.getAllCarts())
 
     }
 

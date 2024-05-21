@@ -24,12 +24,14 @@ class ProductController {
     fun handleNotFound(exception: ClassNotFoundException): ResponseEntity<String> = ResponseEntity(
         exception.message, HttpStatus.NOT_FOUND
     )
+    //get all product
 
     @GetMapping
     fun getProducts(): Collection<Product> {
         return ProductDatabase.productsList
 
     }
+    //get product by id for description
     @GetMapping("/{id}")
     fun getProduct(@PathVariable id: String):Product? {
         return ProductDatabase.productsList.find { it.id==id }

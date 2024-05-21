@@ -1,4 +1,4 @@
-package com.khalekuzzaman.just.cse.springboot.samples.apis
+package com.khalekuzzaman.just.cse.springboot.samples.apis.misc
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
